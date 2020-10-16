@@ -5,6 +5,7 @@
  * @author Luca Antiga 	/ http://lantiga.github.io
  */
 
+  
 THREE.TrackballControls = function (object, domElement) {
   var _this = this;
   var STATE = {
