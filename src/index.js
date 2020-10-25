@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import ring from './models/ring-shader.glb'
+import ring5 from './ring-models/ring-v6.glb';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 	var scene = new THREE.Scene();
@@ -21,7 +22,7 @@ camera.position.z = 6;
 // GLTFLoader
 
 const loader = new GLTFLoader();
-loader.load(ring, function (gltf) {
+loader.load(ring5, function (gltf) {
 	scene.add(gltf.scene);
 }, undefined, function (error) {
 		console.log(error)

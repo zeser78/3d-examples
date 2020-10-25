@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+<h2>Three.js JSON Loader Demo</h2>
+
+<noscript>
+    <p style="color: #A00; font-weight: bold">Sorry, but this page requires JavaScript!</p>
+</noscript>
+
+<p style="color:#A00; font-weight: bold" id="message"></p>
+
+<p><b>Use the mouse to rotate the model.</b></p>
+
+<div id="canvas-holder" style="float:left">
+    <canvas width=500 height=500 id="glcanvas" style="background-color:black"></canvas>
+</div>
+
+<div style="float:left; margin-left:2cm">
+
+    <p style="text-indent: -40px"><b>JSON models:</b><br>
+        <label><input type="radio" name="model" id="r0">arrowhead.js</label><br>
+        <label><input type="radio" name="model" id="r1">horse.js</label><br>
+        <label><input type="radio" name="model" id="r2">stork.js</label><br>
+        <label><input type="radio" name="model" id="r3">tree.js</label><br>
+        <label><input type="radio" name="model" id="r4">terraine.js</label><br>
+        <label><input type="radio" name="model" id="r5">Suzanne.js</label><br>
+        <label><input type="radio" name="model" id="r6">WaltHeadLo.js</label>
+    </p>
+
+    <p id="button" style="display:none; margin-top:30px"><button id="vertexNormalsBtn">Make Smooth</button></p>
+
+    <p id="status" style="margin-top:30px; font-weight: bold"></p>
+</div>
+
+<p style="font-size:smaller; clear: both">
+    Except for arrowhead.js, the models are from the <a href="http://threejs.org">three.js</a> download;<br>
+    arrowhead.js was modeled in <a href="http://blender.org">Blender</a>. Horse and stork colors<br>
+    come with the models.
+</p>
+    <script src="./index.js"></script>
+</body>
+</html>
